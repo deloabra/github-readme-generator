@@ -1,3 +1,6 @@
+const api = require("./utils/api.js");
+const md = require("./utils/generateMarkdown.js");
+
 const questions = [
 
 ];
@@ -10,3 +13,4 @@ function init() {
 }
 
 init();
+console.log(md.generateMarkdown({title: "test"}));
