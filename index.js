@@ -62,7 +62,7 @@ function writeToFile(fileName, data) {
         if(error){
             return console.log(error);
         }
-        console.log("Your readme has been made in the results folder.");
+        console.log("Your readme has been made with the name createdREADME.md.");
     })
 }
 
@@ -73,7 +73,7 @@ async function init() {
         
         const user = await api.api.getUser(data.username);
 
-        writeToFile("./results/README.md", md.generateMarkdown(data, user));
+        writeToFile("createdREADME.md", md.generateMarkdown(data, user));
 
     }
     catch(error){
