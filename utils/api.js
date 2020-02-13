@@ -4,9 +4,8 @@ const api = {
   getUser(username) {
     const queryUrl = `https://api.github.com/users/${username}`;
 
-    axios
+    return axios
       .get(queryUrl)
-      .then(response => response);
   }
 };
 
